@@ -1,0 +1,101 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cards</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        body{
+            display: flex; 
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
+            background: whitesmoke;
+        }
+        .card{
+            height: 500px;
+            margin:50px;
+            box-shadow: 5px 5px 35px black;
+            overflow: hidden;
+        }
+        .container{
+            display: flex;
+        }
+        img{
+            height: 500px;
+            width: 350px;
+            border-radius: 4px;
+        }
+        .intro{
+            height: 70px;
+            width: 350px;
+            padding: 7px;
+            box-sizing: border-box;
+            position: absolute;
+            background: rgb(27,27,27,0.6);
+            color: white;
+            transition: 0.5s;
+        }
+        h1{
+            margin: 10px;
+            font-size: 40px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        p{
+            font-size: 20px;
+            margin: 20px;
+            visibility: hidden;
+            opacity:0;
+        }
+        span{
+            font-weight: bold;
+        }
+        .card:hover{
+            cursor: pointer;
+        }
+        .card:hover .intro{
+            height: 240px;
+            bottom: 169.5px;
+            background: rgba(28, 28, 28, 0.5);
+
+        }
+        .card:hover p{
+            opacity: 1;
+            visibility: visible;
+        }
+        .card:hover img{
+            transform: scale(1.1) rotate(0.8deg);
+            /* opacity: 80%; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="tiger.jpg">
+            <div class="intro">
+                <h1>Tiger</h1>
+                <p><span>Tiger</span>  is the largest living cat species and a member of the genus Panthera. It is most recognisable for its dark vertical stripes on orange fur with a white underside.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="lotus.jpg">
+            <div class="intro">
+                <h1>Lotus</h1>
+                <p><span>Lotus</span>  flowers are one of the most prominent tokens in Eastern cultures. In Hinduism and Buddhism, they’re considered the most sacred flower. </p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="peacock.jpg">
+            <div class="intro">
+                <h1>Peacock</h1>
+                <p><span>Peacock</span>  is native to India and significant in its culture. In Hinduism, the Indian peacock is the mount of the god of war.Also known as the vahan of Kartikeya. </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
